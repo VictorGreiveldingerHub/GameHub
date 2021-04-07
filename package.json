@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/VictorGreiveldingerHub/GameHub/issues"
   },
-  "homepage": "https://github.com/VictorGreiveldingerHub/GameHub#readme"
+  "homepage": "https://github.com/VictorGreiveldingerHub/GameHub#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
 }
