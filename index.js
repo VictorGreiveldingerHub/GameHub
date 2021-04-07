@@ -11,8 +11,17 @@ app.set('views', 'views');
 
 // Route racine
 app.get('/', function(req, res) {
-    res.render('index', );
+    res.render('index');
 });
+
+app.get('/diceroller', function(req, res) {
+    res.render('diceRoller');
+});
+
+app.get('/fourchette', function(req, res) {
+    res.render('fourchette');
+});
+
 
 // Serveur écoute le port
 app.listen(port, () => {
