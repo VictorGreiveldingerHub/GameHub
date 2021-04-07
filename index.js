@@ -14,11 +14,11 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
-app.get('/diceroller', function(req, res) {
+app.get('/game/diceRoller', function(req, res) {
     res.render('diceRoller');
 });
 
-app.get('/fourchette', function(req, res) {
+app.get('/game/fourchette', function(req, res) {
     res.render('fourchette');
 });
 
