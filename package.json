@@ -1,0 +1,19 @@
+{
+  "name": "gamehub",
+  "version": "1.0.0",
+  "description": "Bon, on a quelques jeux qui traînent, c'est cool ! Mais c'est le bazar !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/VictorGreiveldingerHub/GameHub.git"
+  },
+  "author": "Victor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorGreiveldingerHub/GameHub/issues"
+  },
+  "homepage": "https://github.com/VictorGreiveldingerHub/GameHub#readme"
+}
