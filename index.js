@@ -2,26 +2,25 @@
 const express = require('express');
 const port = 3000;
 const app = express();
+const games = require('./games.json');
+const router = require('./modules/router');
 
 // Moteur de rendu
-app.use(express.static('assets'));
+app.use(express.static('public'));
+app.use(router);
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
-// Route racine
-app.get('/', function(req, res) {
-    res.render('index');
-});
 
-app.get('/game/diceRoller', function(req, res) {
-    res.render('diceRoller');
-});
-
-app.get('/game/fourchette', function(req, res) {
-    res.render('fourchette');
-});
-
+// const cssForDice = () => {
+//     let cssDice;
+//     for (let game of games) {
+//         cssDice = `${game.cssFile}`;
+//         cssDice.substr(4);
+//     };
+//     return cssDice; // retourne diceRoller.css
+// };
 
 // Serveur écoute le port
 app.listen(port, () => {
