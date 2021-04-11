@@ -13,9 +13,7 @@ console.log(navLinks());
 
 // Route racine
 router.get('/', (req, res) => {
-    res.render('index', {
-        css: false,
-    });
+    res.render('index');
 });
 
 router.get('/game/diceRoller', (req, res) => {
@@ -25,9 +23,7 @@ router.get('/game/diceRoller', (req, res) => {
 });
 
 router.get('/game/fourchette', (req, res) => {
-    res.render('fourchette', {
-        css: false,
-    });
+    res.render('fourchette');
 });
 
 module.exports = router;
